@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.YogaActivity"
+    android:background="#ffffff">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/slideViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/dotsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:orientation="horizontal"
+        />
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_marginRight="20dp"
+        android:layout_above="@+id/bottom_of_page"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background_next"/>
+
+    <Button
+        android:id="@+id/prevBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_above="@+id/bottom_of_page"
+        android:layout_alignParentLeft="true"
+        android:text="Back"
+        android:visibility="invisible"
+        android:background="@drawable/background_prev"/>
+
+    <TextView
+        android:id="@+id/bottom_of_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do each yoga asana for 2min minimum"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/gym_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GYM WORKOUT ROUTINE"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/gymNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STRICTLY FOLLOW THE DAY ROUTINE"
+        android:layout_below="@id/gym_heading"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_gym"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="7dp"
+        android:layout_below="@id/gymNote"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>
+
+</FrameLayout>

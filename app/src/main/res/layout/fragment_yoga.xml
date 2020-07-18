@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.YogaFragment"
+    android:background="@drawable/yogabackground">
+
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="WELCOME"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yoga and meditation is a vital way to purify and quite the mind , thus rejuvenating the body . "
+        android:layout_below="@id/welcome"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/txtSession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtWelcome"
+        android:text="This session is a seriously sophisticated approach to yoga that is sustainable, efficient and challenging . It is an evolution of yoga that addresses the imbalances of the modern lifestyle! "
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="12sp"
+        android:textColor="@color/colorAccent"/>
+
+
+    <Button
+        android:id="@+id/btnYoga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="START THE SESSION"
+        android:layout_below="@id/txtSession"
+        android:background="@drawable/background_start_yoga_session"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        />
+    
+    
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home" />
+
+        <item
+            android:id="@+id/gymWorkout"
+            android:title="Gym Workout" />
+        <item
+            android:id="@+id/yoga"
+            android:title="Yoga Workout"/>
+
+    <item
+        android:id="@+id/dimensionOfWellness"
+        android:title="Dimensions of Wellness"/>
+
+    <item
+        android:id="@+id/aboutapp"
+        android:title="About app" />
+
+
+</menu>

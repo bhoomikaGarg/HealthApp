@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.IntellectualActivity"
+    android:background="#faf3f2">
+
+    <ImageView
+        android:id="@+id/imgIntellectual"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/intellectual"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/txtIntellectual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="INTELLECTUAL WELLNESS"
+        android:textColor="@color/colorPrimary"
+        android:textSize="19sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/txtDefine"
+        android:layout_below="@id/imgIntellectual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLightPink"
+            android:text="Intellectual wellness encourages us to engage in creative and mentally-stimulating activities. These activities should expand your knowledge and skills while allowing you to share your knowledge and skills with others. Intellectual wellness can be developed through academics, cultural involvement, community involvement and personal hobbies. As intellectual wellness develops, you are able to develop personal resources that work together with the other realms of wellness in order to be achieve a more balanced life."
+            android:padding="20dp"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/txtRoute"
+        android:layout_below="@id/txtDefine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Route to Intellectual Wellness"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"/>
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/IntellectualEntries"
+        android:layout_below="@id/txtRoute"
+        android:background="@color/colorLightPink"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

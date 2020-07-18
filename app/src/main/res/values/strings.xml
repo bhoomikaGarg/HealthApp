@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">HealthApp</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aboutAppHead">
+        No! It’s never too late !
+    </string>
+
+    <string name="about_app">
+        Home Exercises : Quarantine life is challenging, to say the least, and all of us are struggling mentally and emotionally so to prevent excess weight gain during this scary time. Let’s do some easy exercises at home
+
+    </string>
+
+    <string name="about_app1">
+        Gym Workout routines : It helps you in training for 6 days per week, with just one day of recovery. It may sound brutal, but if you stick with it you will soon be reaping the rewards of an incredible physique.
+    </string>
+
+    <string name="about_app2">
+        Yoga Workout: It is  an ancient form of fitness with roots in India focuses on developing balance, strength and flexibility.
+    </string>
+
+    <string name="about_app3">
+        Dimensions of wellness : This section not just talk about building body physique but also aspects of personal health: physical, emotional, social, spiritual, and intellectual. In order to be considered "well," it is imperative for none of these areas to be neglected.
+    </string>
+
+    <string name="about_app4">
+        Step counter : Keeping track of your physical activity can be hard without a Fitbit, Apple Watch, or other workout tracking device — especially for people who walk as their main form of exercise. The easiest solution is to use this step counter
+    </string>
+
+
+    <string-array name="PhysicalEntries">
+        <item>Engage in physical activity everyday for 30 minutes. You may break up your daily 30 minutes into 10 minutes bouts.</item>
+        <item>Use stairs instead of the elevator or escalator and walk whenever possible.</item>
+        <item>Learn to recognize warning signs when your body begins feeling ill.</item>
+        <item>Eat a variety of healthy foods and control your meal portions.</item>
+        <item>Maintain a regular sleep schedule and get between 7–9 hours of sleep each night.</item>
+        <item>Practice safe sex.</item>
+    </string-array>
+
+    <string-array name="SocialEntries">
+        <item>Reflect on yourself and your social needs. What aspects of your social life do you enjoy? What parts would you like to improve?</item>
+        <item>Make an effort to keep in touch with supportive friends and family.</item>
+        <item>Practice self-disclosure.</item>
+        <item>Participate in group discussions and practice active listening.</item>
+        <item>Join a club or organization.</item>
+    </string-array>
+
+    <string-array name="SpiritualEntries">
+        <item>Explore your inner self. Take time to think about who you are.</item>
+        <item>If you experience a life-changing event, take a few minutes to think about what series of events led to this.</item>
+        <item>Spend time meditating or practicing mindful relaxation.</item>
+        <item>Practice acceptance.</item>
+        <item>Be curious. If something happens that makes you even the slightest bit curious, take a moment to explore the experience a little deeper.</item>
+        <item>Look for a religious faith that you agree with.</item>
+    </string-array>
+
+    <string-array name="IntellectualEntries">
+        <item>Be open-minded.</item>
+        <item>Listen. When you participate in active listening you are able to fully comprehend the information that is being given to you.</item>
+        <item>Pick up a hobby. Hobbies are great ways to increase your skill set. They can also be fun!</item>
+        <item>Travel. The best way to gain knowledge as well as an appreciation for another culture is to experience it yourself.</item>
+        <item>Express your creative side by exploring different avenues of creativity and artistic expressions.</item>
+    </string-array>
+
+    <string-array name="EmotionalEntries">
+        <item>Remind yourself to stay positive, always.</item>
+        <item>Smile.</item>
+        <item>Seek or accept help and support from others when needed.</item>
+        <item>Employ gratitude to your life in order to strengthen relationships with family and friends.</item>
+        <item>Practice being mindful and increase your awareness. This can be done through various forms of meditation.</item>
+        <item>Accept mistakes and learn from them for next time. Mistakes are not terrible experiences; they are learning experiences.</item>
+        <item>Balance your other dimensions of Wellness.</item>
+    </string-array>
+
+</resources>

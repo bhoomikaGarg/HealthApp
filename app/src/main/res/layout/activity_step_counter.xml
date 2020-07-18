@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:background="@drawable/background_step"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    tools:context="com.example.healthapp.activity.StepCounter" >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/imgstep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="260dp"
+            android:src="@drawable/step_counts" />
+
+        <TextView
+            android:id="@+id/heading_steps"
+            android:layout_width="234dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/colorLightPink"
+            android:padding="20dp"
+            android:text="STEP COUNTER"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/stepcounter_"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/cardView"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:indeterminate="false"
+            android:max="5000"
+            android:progress="0"
+            android:progressDrawable="@drawable/custom_progressbar_drawable"
+            android:secondaryProgress="0" />
+
+
+        <TextView
+            android:id="@+id/textViewStepCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="250dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#131212" />
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_below="@id/stepcounter_"
+        >
+
+        <RelativeLayout
+            android:id="@+id/relative_calory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/calories_burnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CALORIES BURNED: "
+                android:textAlignment="center"
+                android:layout_below="@+id/abc"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@color/colorLightPink"
+                android:textColor="@color/darkRed"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/abc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CALORIES BURNED: "
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:background="@color/colorLightPink"
+                android:textColor="@color/darkRed"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
