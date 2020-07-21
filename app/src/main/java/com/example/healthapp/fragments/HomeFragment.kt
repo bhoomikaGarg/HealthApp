@@ -42,8 +42,8 @@ class HomeFragment : Fragment() {
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if(item.itemId == R.id.info){
-            val intent = Intent(context, developedBy::class.java)
-            startActivity(intent)
+            val i = Intent(context, developedBy::class.java)
+            startActivity(i)
         }
 
         return super.onOptionsItemSelected(item)

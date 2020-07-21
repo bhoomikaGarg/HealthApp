@@ -1,28 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-android:layout_height="200dp"
-android:background="#E0E0E0"
-android:orientation="vertical"
-android:weightSum="10">
+    android:layout_height="200dp"
+    android:background="@drawable/health_promotion_wellness">
 
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="6"
-        android:layout_margin="10dp"
-        tools:srcCompat="@tools:sample/avatars" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:textSize="30sp"
-        android:layout_weight="4"
-        android:layout_margin="15dp"
-        android:text="Health app">
-    </TextView>
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginLeft="130dp"-->
+<!--        android:fontFamily="@font/acme"-->
+<!--        android:text="HEALTH APP"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:textSize="30sp"></TextView>-->
 </LinearLayout>

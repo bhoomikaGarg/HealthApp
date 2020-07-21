@@ -84,6 +84,15 @@ class MainActivity : AppCompatActivity() {
                     supportActionBar?.title = "Dimensions Of Wellness"
                     drawerLayout.closeDrawers()
                 }
+                R.id.share ->{
+                    supportFragmentManager.beginTransaction()
+                        .replace(
+                            R.id.frame,
+                            share()
+                        ).commit()
+                    supportActionBar?.title = "Send to "
+                    drawerLayout.closeDrawers()
+                }
                 R.id.aboutapp ->{
                 supportFragmentManager.beginTransaction()
                     .replace(

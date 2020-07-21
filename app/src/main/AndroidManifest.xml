@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.BmiActivity"></activity>
+        <activity android:name=".activity.MainActivity"></activity>
+        <activity android:name=".activity.BmiActivity" />
+        <activity android:name=".activity.developedBy" />
         <activity android:name=".activity.IntellectualActivity" />
         <activity android:name=".activity.SpiritualActivity" />
         <activity android:name=".activity.SocialActivity" />
@@ -18,7 +20,7 @@
         <activity android:name=".activity.StepCounter" />
         <activity android:name=".activity.gymActivity.Gym_Activity_advance_day1" />
         <activity android:name=".activity.YogaActivity" />
-        <activity android:name=".activity.MainActivity">
+        <activity android:name=".activity.splashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -39,6 +41,10 @@
         <activity android:name=".activity.gymActivity.Gym_Activity_intermediate_day3" />
         <activity android:name=".activity.gymActivity.Gym_Activity_intermediate_day4" />
         <activity android:name=".activity.gymActivity.Gym_Activity_intermediate_day5" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

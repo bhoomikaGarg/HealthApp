@@ -4,22 +4,39 @@
 
     <item
         android:id="@+id/home"
-        android:title="Home" />
-
+        android:icon="@drawable/ic_health"
+        android:title="Health" />
         <item
-            android:id="@+id/gymWorkout"
-            android:title="Gym Workout" />
-        <item
-            android:id="@+id/yoga"
-            android:title="Yoga Workout"/>
+            android:id="@+id/dimensionOfWellness"
+            android:icon="@drawable/ic_wellness"
+            android:title="Dimensions of Wellness"/>
 
-    <item
-        android:id="@+id/dimensionOfWellness"
-        android:title="Dimensions of Wellness"/>
+    <item android:title="Exercise">
+                    <menu>
+                        <item
+                            android:id="@+id/gymWorkout"
+                            android:title="Gym Workout" />
+                        <item
+                            android:id="@+id/yoga"
+                            android:title="Yoga Workout"/>
 
-    <item
-        android:id="@+id/aboutapp"
-        android:title="About app" />
+                    </menu>
+    </item>
+
+
+<item android:title="Extra">
+            <menu>
+                <item
+                    android:id="@+id/aboutapp"
+                    android:icon="@drawable/ic_about"
+                    android:title="About app" />
+                <item
+                    android:title="Share"
+                    android:icon="@drawable/ic_share"
+                    android:id="@+id/share">
+                </item>
+            </menu>
+</item>
 
 
 </menu>

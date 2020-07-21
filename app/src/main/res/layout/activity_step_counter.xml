@@ -17,7 +17,7 @@
         <ImageView
             android:id="@+id/imgstep"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="90dp"
             android:layout_marginStart="260dp"
             android:src="@drawable/step_counts" />
 
@@ -70,49 +70,65 @@
             android:textColor="#131212" />
     </RelativeLayout>
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:padding="10dp"
-        android:layout_margin="10dp"
+        android:id="@+id/calory_display"
         android:layout_below="@id/stepcounter_"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
         >
 
-        <RelativeLayout
-            android:id="@+id/relative_calory"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="10dp"
-            android:background="@color/colorWhite"
-            android:orientation="vertical">
+            android:layout_margin="10dp"
+            android:background="@color/colorLightPink"
+            android:weightSum="6">
+
+            <RelativeLayout
+                android:id="@+id/imgPedometer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@color/colorLightPink">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/calory" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5"
+                android:background="@color/colorPrimaryDark">
+
+                <TextView
+                    android:id="@+id/cal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="CALORIES BURNED"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/calories_burnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cal"
+                    android:layout_centerHorizontal="true"
+                    android:text="CAL "
+                    android:textColor="@color/colorWhite"
+                    />
+
+            </RelativeLayout>
 
 
-            <TextView
-                android:id="@+id/calories_burnt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CALORIES BURNED: "
-                android:textAlignment="center"
-                android:layout_below="@+id/abc"
-                android:layout_marginTop="10dp"
-                android:padding="10dp"
-                android:background="@color/colorLightPink"
-                android:textColor="@color/darkRed"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-            <TextView
-                android:id="@+id/abc"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CALORIES BURNED: "
-                android:textAlignment="center"
-                android:padding="10dp"
-                android:background="@color/colorLightPink"
-                android:textColor="@color/darkRed"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-        </RelativeLayout>
+        </LinearLayout>
     </androidx.cardview.widget.CardView>
+
 
 
 </RelativeLayout>

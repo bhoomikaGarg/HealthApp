@@ -84,7 +84,7 @@ public class StepCounter extends AppCompatActivity implements SensorEventListene
                 stepcounter.setText(StepCounts + " / 5000 STEPS");
                 double calory=caloriesBurnt_func(StepCounts);
                 String calory_str=String.valueOf(calory);
-                calories_burnt.setText(calory_str);
+                calories_burnt.setText(calory_str+" calories");
             }
             else{
                 Toast.makeText(getApplicationContext(), "5000 STEPS COMPLETE !!",Toast.LENGTH_LONG).show();
