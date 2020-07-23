@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:textColor="@color/darkRed"
+        android:textSize="20sp"
         android:text="Share your app !" />
 
 </FrameLayout>
