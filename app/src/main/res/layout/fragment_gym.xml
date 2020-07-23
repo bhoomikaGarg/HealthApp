@@ -6,18 +6,34 @@
     tools:context=".fragments.GymFragment"
     android:background="@color/colorLightPink">
 
+
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+
     android:id="@+id/gymFragmentMain">
+    <TextView
+        android:id="@+id/text_gym_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:textColor="@color/darkRed"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:paddingRight="4dp"
+        android:paddingLeft="4dp"
+        android:text="Workout that fits your nascent training goals without leaving the house." />
+
 
     <androidx.cardview.widget.CardView
         android:id="@+id/beginner"
         android:layout_width="match_parent"
         android:layout_height="180dp"
         android:layout_marginLeft="10dp"
+        android:layout_below="@id/text_gym_"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:clickable="true"
     >
     <RelativeLayout

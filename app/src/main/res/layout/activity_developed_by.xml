@@ -28,10 +28,6 @@
             android:textStyle="bold" />
 
 
-
-
-
-
     </RelativeLayout>
 
 
@@ -55,13 +51,15 @@
         android:layout_below="@id/txtcreator"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="15dp"
-        android:background="#F4C1C1">
+        >
 
         <LinearLayout
             android:id="@+id/bhoomika"
             android:layout_width="match_parent"
             android:layout_height="160dp"
+            android:layout_margin="4dp"
             android:orientation="horizontal"
+            android:background="#F4C1C1"
             android:weightSum="5">
 
             <ImageView
@@ -128,6 +126,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="160dp"
+            android:background="#F4C1C1"
             android:layout_below="@+id/bhoomika"
             android:orientation="horizontal"
             android:weightSum="5">

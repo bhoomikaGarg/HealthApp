@@ -16,5 +16,12 @@ class developedBy : AppCompatActivity() {
         feedback.text =
             Html.fromHtml("<a href=\"mailto:bhoomika.garg.9@gmail.com\">Send Feedback</a>")
         feedback.movementMethod = LinkMovementMethod.getInstance()
+
+        val feedback1: TextView = findViewById(R.id.feedback1)
+        feedback1.text =
+            Html.fromHtml("<a href=\"mailto:bhoomika.garg.9@gmail.com\">Send Feedback</a>")
+        feedback1.movementMethod = LinkMovementMethod.getInstance()
+
     }
+
 }
