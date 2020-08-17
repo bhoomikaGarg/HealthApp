@@ -1,5 +1,6 @@
 package com.example.healthapp.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -8,6 +9,7 @@ import android.widget.FrameLayout
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import com.example.healthapp.BuildConfig
 import com.example.healthapp.R
 import com.example.healthapp.fragments.*
 import com.google.android.material.navigation.NavigationView
@@ -94,11 +96,12 @@ class MainActivity : AppCompatActivity() {
                     drawerLayout.closeDrawers()
                 }
                 R.id.share ->{
-                    supportFragmentManager.beginTransaction()
-                        .replace(
-                            R.id.frame,
-                            share()
-                        ).commit()
+
+                    val shareIntent = Intent(Intent.ACTION_SEND)
+                    shareIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                    shareIntent.type = "text/plain"
+                    shareIntent.putExtra(Intent.EXTRA_TEXT, "Hey check out my app at: https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID)
+                    startActivity(shareIntent)
                     supportActionBar?.title = "Send to "
                     drawerLayout.closeDrawers()
                 }
