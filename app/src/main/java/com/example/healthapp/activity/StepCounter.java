@@ -108,6 +108,19 @@ public class StepCounter extends AppCompatActivity implements SensorEventListene
         }
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        isstepcounter=true;
+        Sensor sensor=sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER);
+        if(sensor==null){
+            Toast.makeText(getApplicationContext(), "ERROR",Toast.LENGTH_LONG).show();
+        }else{
+            sensorManager.registerListener(this, sensor,SensorManager.SENSOR_DELAY_UI);
+
+        }
+    }
+
     @Override //to unregister
     protected void onPause() {
         super.onPause();

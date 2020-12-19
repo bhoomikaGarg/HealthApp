@@ -65,6 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_marginTop="250dp"
+            android:text="Bhoomika"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="#131212" />
     </RelativeLayout>
@@ -101,7 +102,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="4.5"
-                android:background="@color/colorPrimaryDark">
+                android:background="@color/colorLightPink">
 
                 <TextView
                     android:id="@+id/cal"
@@ -109,7 +110,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:text="CALORIES BURNED"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorPrimaryDark"
                     android:textStyle="bold" />
 
                 <TextView
@@ -119,7 +120,7 @@
                     android:layout_below="@id/cal"
                     android:layout_centerHorizontal="true"
                     android:text="CAL "
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorPrimaryDark"
                     />
 
             </RelativeLayout>

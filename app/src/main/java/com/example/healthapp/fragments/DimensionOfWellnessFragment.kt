@@ -25,7 +25,7 @@ class DimensionOfWellnessFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+
         val view = inflater.inflate(R.layout.fragment_dimension_of_wellness, container, false)
 
         physical = view.findViewById(R.id.physical)

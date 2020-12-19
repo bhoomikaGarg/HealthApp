@@ -28,7 +28,7 @@
             android:minHeight="?attr/actionBarSize"
             android:background="@color/colorPrimary"
             android:theme="@style/ThemeOverlay.AppCompat.Dark"
-            app:layout_scrollFlags="scroll|enterAlways"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
             />
     </com.google.android.material.appbar.AppBarLayout>
 
