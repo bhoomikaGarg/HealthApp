@@ -24,7 +24,7 @@ class Gym_routine_advance : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_gym_routine, container, false)
-        recyclerView = view.findViewById(R.id.recycler_gym)
+        recyclerView = view.findViewById(R.id.recycler_gym) as RecyclerView
         layoutManager_gym = GridLayoutManager(activity,2)
         val listofDays = arrayListOf<gym_routine>()
 

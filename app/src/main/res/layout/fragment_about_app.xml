@@ -23,6 +23,13 @@
         android:textColor="@color/colorPrimaryDark"
         android:textAlignment="center"
         android:text="@string/aboutAppHead" />
+    <TextView
+        android:id="@+id/extra"
+        android:layout_below="@id/aboutAppHeader"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:text="EXTRA" />
 
     <TextView
         android:id="@+id/aboutApp1"
@@ -32,7 +39,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:textColor="@color/colorAccent"
-        android:layout_below="@id/aboutAppHeader"
+        android:layout_below="@id/extra"
         android:text="@string/about_app" />
 
     <TextView
